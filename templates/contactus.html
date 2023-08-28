@@ -1,0 +1,107 @@
+{% extends "header.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylecon.css') }}">
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131678139-1"></script>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="new">
+                    <div class="rownew">
+<!--                        <div class="getintouch">-->
+<!--                        <h3 class="heading_h3h"><strong>GET IN TOUCH</strong></h3>-->
+<!--                        <p><span class="glyphicon glyphicon-map-marker">PCCOE</span></p>-->
+<!--                        <p><span class="glyphicon glyphicon-earphone"> +91 - 9960984347</span></p>-->
+<!--                        <p><span class="glyphicon glyphicon-envelope"> <a href="mailto:pccoeadmin@gmail.com">pccoeadmin@gmail.com</a></span></p>-->
+<!--                    </div>-->
+
+                        <div class="getintouch">
+                            <h3 class="heading_h3h_top"><strong>GET IN TOUCH</strong></h3>
+                            <p><span class="glyphicon glyphicon-map-marker"></span> Sector 26, Pradhikaran, <br>
+                                &nbsp;&nbsp;&nbsp; Nigdi, Pune, 411044 <br> &nbsp;&nbsp;&nbsp; (Near Akurdi Railway
+                                Station)</p>
+                            <p><span class="glyphicon glyphicon-earphone"></span> +91 - 9960984347</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span> <a class="tag"
+                                    href="mailto:pccoeadmin@gmail.com">pccoeadmin@gmail.com</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="location">
+                        <h3 class="heading_h3h_loca"><strong>LOCATION</strong></h3>
+                        <iframe class="pccoe_map" width="100%"
+                            src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Pimpri+Chinchwad+College+Of+Engineering,+Sector+No.+26,+Pimpri+Chinchwad,+Maharashtra&amp;aq=0&amp;oq=pccoe+pune&amp;sll=18.815427,76.775144&amp;sspn=12.002265,14.128418&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=18.658505,73.769374&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"
+                            allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" height="160px"
+                            frameborder="0"></iframe>
+                    </div>
+
+                </div>
+
+                <!-- <ul class="sci">
+                    <li><a href="#"><img src="1.png"></a></li>
+                    <li><a href="#"><img src="2.png"></a></li>
+                    <li><a href="#"><img src="3.png"></a></li>
+                    <li><a href="#"><img src="4.png"></a></li>
+                    <li><a href="#"><img src="5.png"></a></li>
+                </ul> -->
+            </div>
+
+            <div class="contactForm">
+                <form action="https://formsubmit.co/hexenius@gmail.com" method="POST">
+                <h2>Send a message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" class = "inp" name="" required>
+                        <span class="sp">Name</span>
+                    </div>
+
+                    <div class="inputBox w50">
+                        <input type="text" class = "inp" name="" required>
+                        <span class="sp">Last Name</span>
+                    </div>
+
+                    <div class="inputBox w50">
+                        <input type="text" class = "inp" name="" required>
+                        <span class="sp">Email address</span>
+                    </div>
+
+                    <div class="inputBox w50">
+                        <input type="text" class = "inp" name="" required>
+                        <span class="sp">Mobile Number</span>
+                    </div>
+
+                    <div class="inputBox w100">
+                        <textarea name="" class = "inp" required></textarea>
+                        <span class="sp">Write your message here...</span>
+                    </div>
+
+                    <button class="button">Send</button>
+
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+{% endblock %}

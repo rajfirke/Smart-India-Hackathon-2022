@@ -1,0 +1,26 @@
+{% extends "header.html" %}
+{% block content %}
+<html>
+<head>
+
+    <table class="table" >
+    <tr>
+        {% for header1 in table_headiing5 %}
+        <th scope="col">{{ header1 }}</th>
+        {% endfor %}
+    </tr>
+    {% for r1 in data5 %}
+    <tr>
+        {% for cell1 in r1 %}
+      <td>{{ cell1 }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+</head>
+<body>
+
+</body>
+</html>
+{% endblock %}
